@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarjeta de Presentación</title>
+        <link rel="stylesheet" href="./css/estiloTarjeta.css">
+        <script defer src="./js/funciones.js"></script> <!-- Cambiado a script defer -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Personaliza tu Tarjeta</h1>
+        </header>
+
+        <section>
+            <article id="cajaTarjeta">
+                <figcaption id="mensaje" class="mensaje">Personaliza tu tarjeta</figcaption>
+            </article>
+
+            <div>
+                <label>
+                    <button id="personalizar" onclick="mostrarFormulario()">Personalizar</button>
+                </label>
+            </div>
+
+            <form id="formulario" style="display: none;" name="formulario" action="" method="get"> <!-- El formulario se oculta al inicio -->
+                <label class="barrasForm">Nombre </label>
+                <input type="text" id="txtnombre" name="txtnombre" placeholder="Introduzca su nombre" required>
+
+                <label class="barrasForm">Puesto </label>
+                <input type="text" id="txtpuesto" name="txtpuesto" placeholder="Introduzca su puesto" required>
+
+                <div>
+                    <button type="button" onclick="actualizarTarjeta()">Realizar</button> <!-- Llama a la función para actualizar la tarjeta -->
+                </div>
+            </form>
+        </section>
+    </body>
+
+    <footer>
+        <h4>Julia Paramo - 18 de septiembre 2024</h4>
+    </footer>
+</html>
